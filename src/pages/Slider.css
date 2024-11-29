@@ -1,0 +1,41 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 100 0px; Adjust max-width as per your design */
+  margin: auto;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: calc(100% / 3); /* Assuming you want three slides visible at a time */
+  transition: opacity 0.5s ease;
+}
+
+.slider-buttons {
+  width: 100%;
+  position: absolute;
+  top: -50px; /* Adjust top position for proper alignment */
+  right: 10px; /* Adjust right position for proper alignment */
+  display: flex;
+  gap: 50px; /* Adjust gap between buttons */
+  justify-content: space-between;
+}
+
+button {
+  background-color: rgba(164, 18, 18, 0.5); /* Adjust button background color */
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
